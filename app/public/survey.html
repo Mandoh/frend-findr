@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FrendFindr</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1 class="text-center">
+                <span class="fa fa-fire"></span>FrendFindr</h1>
+            <hr>
+            <h2 class="text-center">Survey</h2>
+            <h3 class="text-center">-scale is from 1(strongly disagree) to 5(strongly agree)</h3>
+            <br>
+        </div>
+        <!-- questionaire -->
+        <div class="container p-3 mb-2 bg-light text-dark">
+            <div class="row">
+                <form>
+                    <div class="form-group">
+                        <label for="name">
+                            <h2>Name</h2>
+                        </label>
+                        <input type="text" class="form-control form-control-lg" id="name" placeholder="(Required)">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="img">
+                            <h2>Link to your image</h2>
+                        </label>
+                        <input type='url' class="form-control form-control-lg" id="img" placeholder="(Required)">
+                    </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col">
+                    <label for="exampleFormControlSelect1">(In the key of Skrillex) Wub wUb!, wAhhhh! wUh WUH! waaaAAAhhhHHH!</label>
+                    <select class="form-control" id="q1">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col">
+                    <label for="exampleFormControlSelect1">Who run the world? Girls.</label>
+                    <select class="form-control" id="q2">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col">
+                    <label for="exampleFormControlSelect1">I like big butts and I cannot lie.</label>
+                    <select class="form-control" id="q3">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col">
+                    <label for="exampleFormControlSelect1">I miss the old Kanye.</label>
+                    <select class="form-control" id="q4">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col">
+                    <label for="exampleFormControlSelect1">Move bitch, get out the way.</label>
+                    <select class="form-control" id="q5">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col">
+                    <label for="exampleFormControlSelect1">I got 99 problems.</label>
+                    <select class="form-control" id="q6">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col">
+                    <label for="exampleFormControlSelect1">It's getting hot in here.</label>
+                    <select class="form-control" id="q7">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col">
+                    <label for="exampleFormControlSelect1">Mommaaaaaaaaaa, Ooooooouuuuuoooo.</label>
+                    <select class="form-control" id="q8">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col">
+                    <label for="exampleFormControlSelect1">Lucy in the sky with diamonds.</label>
+                    <select class="form-control" id="q9">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col">
+                    <label for="exampleFormControlSelect1">Never gonna give you up. Never gonna let you down.</label>
+                    <select class="form-control" id="q10">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-primary col" id="match" data-toggle="modal" data-target="#exampleModalCenter">
+                I'm Lonely!
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalCenterTitle">Matched Frend</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" id="matched">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            <div class="container">
+                <p>
+                    <a href="../data/friends.js">API Table Link</a>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $("#match").on("click", function (event) {
+            event.preventDefault();
+            console.log("test");
+
+            var newFriend = {
+                name: $("#name").val().trim(),
+                photo: $("#img").val().trim(),
+                scores: [parseInt($("#q1").val().trim()),
+                parseInt($("#q2").val().trim()),
+                parseInt($("#q3").val().trim()),
+                parseInt($("#q4").val().trim()),
+                parseInt($("#q5").val().trim()),
+                parseInt($("#q6").val().trim()),
+                parseInt($("#q7").val().trim()),
+                parseInt($("#q8").val().trim()),
+                parseInt($("#q9").val().trim()),
+                parseInt($("#q10").val().trim())
+                ]
+            };
+            console.log(newFriend);
+
+            $.ajax({
+                method: "POST",
+                url: "/api/friends",
+                data: newFriend
+            })
+                .done(function () {
+                    alert("Data Saved: ");
+                });
+            // Question: What does this code do??
+            // $.post("/api/friends", newFriend)
+            //     .then(function (data) {
+            //         // console.log("add.html", data);
+            //         alert("Adding character...");
+            //     })
+            // The AJAX function uses the URL of our API to GET the data associated with it (initially set to localhost)
+            $.ajax({ url: "/api/friends", method: "GET" })
+                .then(function (friendsData) {
+
+                    // Here we then log the tableData to console, where it will show up as an object.
+                    console.log(friendsData[0].name);
+                    console.log("------------------------------------");
+                    for (var i in friendsData[i].scores){
+                    reduce(friendsData[i].scores)
+
+                    }
+
+                    var matched = $("#matched");
+                    matched.append(friendsData[0].name);
+                });
+        });
+    </script>
